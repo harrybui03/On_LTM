@@ -34,11 +34,11 @@ public class Main {
         String ans = "";
         for (int i = 1 ; i <= n ; i++){
             if (!nums.contains(i)){
-                ans += STR."\{i},";
+                ans += i;
             }
         }
 
-        String res = STR."\{rI};\{removeLastChar(ans)}";
+        String res =rI +  removeLastChar(ans);
         System.out.println(res);
 
         DatagramPacket dpGuiKq = new DatagramPacket(res.getBytes(), res.length(), iA,sP);
